@@ -1,0 +1,16 @@
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org">
+    <head>
+        <title>Participating</title>
+        <meta charset="UTF-8" />
+    </head>
+    <body>
+        <table>
+            <tbody>
+                <tr th:each="attendant : ${attendant}">
+                    <td th:text="${attendant.name}">attendant name</td>
+                    <td th:text="${attendant.address}">attendant address</td>
+                </tr>
+            </tbody>
+        </table>
+    </body>
+</html>

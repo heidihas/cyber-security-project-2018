@@ -1,0 +1,11 @@
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org">
+    <head>
+        <title>Attendants</title>
+        <meta charset="UTF-8" />
+    </head>
+    <body>
+        <ul>
+            <li th:each="attendant : ${attendants}" th:text="${attendant.name}">attendant name</li>
+        </ul>
+    </body>
+</html>
